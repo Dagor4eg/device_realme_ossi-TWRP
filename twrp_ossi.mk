@@ -58,7 +58,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 COMMON_PATH := device/$(PRODUCT_BRAND)/$(COMMON_SOC)-common
 
 # Device path for OEM device tree
+#DEVICE_PATH := device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)
 DEVICE_PATH := device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, $(DEVICE_PATH)/device-$(PRODUCT_DEVICE).mk)
+#$(call inherit-product, $(DEVICE_PATH)/device-$(PRODUCT_DEVICE).mk)
+$(call inherit-product, $(LOCAL_DIR)/device-$(PRODUCT_DEVICE).mk)
