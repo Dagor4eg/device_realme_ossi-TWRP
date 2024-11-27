@@ -1,6 +1,6 @@
 [
   {
-    "remote": "snowwolf725",
+    "remote": "Dagor4eg",
     "repository": "android_device_oneplus_sm86xx-common",
     "target_path": "device/oneplus/sm86xx-common",
     "branch": "android-12.1"
